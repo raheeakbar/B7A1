@@ -31,12 +31,6 @@ function toggleReadStatus(input: Book): Book & { isRead: true } {
 	return { ...input, isRead: true };
 }
 
-const myBook = {
-	title: "TypeScript Guide",
-	author: "Jane Doe",
-	publishedYear: 2024,
-};
-
 // Problem 6
 class Person {
 	name: string;
