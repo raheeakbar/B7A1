@@ -18,8 +18,6 @@ function getProperty<T, K extends keyof T>(obj: T, key: K) {
 	return obj[key];
 }
 
-const user = { id: 1, name: "John Doe", age: 21 };
-
 // Problem 5
 interface Book {
 	title: string;
