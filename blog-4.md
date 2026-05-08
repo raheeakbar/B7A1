@@ -96,7 +96,7 @@ console.log(s.area()); // 25
 
 ## Abstraction
 
--High Level overview, Hide Low Level
+- High Level Overview, Hide Low Level
 
 - Defines what must be done without caring about how. Subclasses handle the rest.
 
