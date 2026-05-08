@@ -34,4 +34,4 @@ if (typeof x === "string") {
 
 ## Conclusion
 
--any means "TS doesn't care". unknown means "you're permitted to take inputs, but you have to check and confirm the type." It is best to use unknown for unpredictable data.
+- any means "TS doesn't care". unknown means "you're permitted to take inputs, but you have to check and confirm the type." It is best to use unknown for unpredictable data.

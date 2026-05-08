@@ -27,7 +27,7 @@ acc.deposit(1000); // only through methods
 
 ## Inheritance
 
--It resembles the concept of Parent's Power to Children
+- It resembles like Parent's inheritance to Children
 
 - Child class gets parent's properties and methods automatically. No need to rewrite.
 
@@ -53,13 +53,45 @@ s.greet(); // inherited from Person
 
 ## Polymorphism
 
--Can be described as Same Operation, Different Output
+- Can be described as Same Operation, Different Output
 
 - Same method call, different behavior per class. Achieved by overriding the parent method.
 
 ```ts
-const shapes: Shape[] = [new Circle(5), new Rectangle(4, 6)];
-shapes.forEach((s) => console.log(s.area())); // each gives different output
+class Shape {
+	area() {
+		return 0;
+	}
+}
+
+class Rectangle extends Shape {
+	constructor(w, h) {
+		super();
+		this.w = w;
+		this.h = h;
+	}
+
+	area() {
+		return this.w * this.h;
+	}
+}
+
+class Square extends Shape {
+	constructor(size) {
+		super();
+		this.size = size;
+	}
+
+	area() {
+		return this.size * this.size;
+	}
+}
+
+const r = new Rectangle(4, 6);
+console.log(r.area()); // 24
+
+const s = new Square(5);
+console.log(s.area()); // 25
 ```
 
 ## Abstraction
